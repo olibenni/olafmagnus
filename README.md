@@ -93,6 +93,3 @@ and create a secret for each one named:
 - AWS_SECRET_ACCESS_KEY
 respectively.
 
-
-
-TODO: Add these to github secret
