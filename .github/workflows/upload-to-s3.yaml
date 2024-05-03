@@ -21,7 +21,7 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Upload to S3
-      run: aws s3 cp ./src s3://$S3_BUCKET/path --recursive
+      run: aws s3 cp ./src s3://$S3_BUCKET/ --recursive
       env:
         S3_BUCKET: ${{ secrets.S3_BUCKET }}
 
