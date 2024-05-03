@@ -11,7 +11,7 @@ Go to AWS and into S3
 Create an S3 bucket with the following settings:
 1. Set "Block all public access" to "Off"
 2. Under "properties", enable "Static website hosting"
-
+3. Then under "Index document", in the static website settings, write "index.html"
 
 ## Cloudfront
 Go to AWS and into Cloudfront
