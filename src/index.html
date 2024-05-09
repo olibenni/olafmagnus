@@ -1,11 +1,248 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300);</style>
+    <title>Olaf Magnus</title>
+    <link href="./oli.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+      <div data-reactroot="" class="container-fluid">
+        <main class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <section id="header" class="row">
+              <div class="col-sm-9 col-xs-12 title">
+                <h1>Olaf Magnus</h1>
+                <h2 class="vr"></h2>
+                <h2>Software Engineer</h2>
+              </div>
+              <div class="col-sm-3 col-xs-12 text-center photo"></div>
+            </section>
+            <hr style="color: rgb(204, 204, 204); height: 4px;">
+            <section id="about" class="row">
+              <header class="col-sm-3">
+                <h3>About</h3>
+              </header>
+              <div class="col-sm-9">
+                <strong>Website: </strong><a href="http://olafmagnus.com">http://olafmagnus.com</a><br><strong>Phone: </strong>(354) 772-7895<br><strong>Email: </strong><a href="mailto:olafmagnus@olafmagnus.com">olafmagnus@olafmagnus.com</a><br>
+                <section id="profiles"><strong class="network">Twitter: </strong><a target="_blank" href="https://twitter.com/OlafMagnus">@OlafMagnus</a><br><strong class="network">Linkedin: </strong><a target="_blank" href="https:/www.linkedin.com/in/olafmagnus">OlafMagnus</a><br></section>
+              </div>
+            </section>
+            <hr>
+            <section id="work" class="row">
+              <header class="col-sm-3">
+                <h3>Work Experience</h3>
+              </header>
+              <div class="col-sm-9">
+                <div class="details">
+                  <h3>Asana<span class="date pull-right">2019 - Present</span></h3>
+                  <strong>Tech Lead, Infrastructure - Led multiple large projects as tech lead on 3 different teams</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://asana.com">asana.com</a></div>
+                  <p>
+                    </br>
+                    <b>Infrastructure Efficiency</b><br>
+                    Currently working as tech lead for the Infrastructure Efficiency team with the goal of driving sustainable growth through cost reduction and increased efficiency<br>
+                    The team operates across the organization, identifying opportunities and actioning on them with different teams as collaborators or stakeholders.
+                  </p>
+                  <p>
+                    <b>Platform Infrastructure</b><br>
+                    Responsible for building and migrating current workloads over to a multi tenant, homogenous Kubernetes clusters, paving the way for service teams by building out the platform, providing framework level tools and establishing best practices.<br>
+                    Everything from the networking, security, deployments, cli tools to tech talks, workshops and coordinating multiple workstreams over the span of 2 years.<br>
+                    Required coordination and onboarding of multiple teams across the org.
+                  </p>
+                  <p>
+                    <b>Storage Scalability</b><br>
+                    Framework for sharding the database, building idempotent, distributed system for transactions across multiple databases.
+                  </p>
 
-<h1>Hello World!</h1>
+                  <h3>Tímavera<span class="date pull-right">2017 - Present</span></h3>
+                  <strong>Co-founder / Co-owner</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://timavera.com">timavera.com</a> / <a target="_blank" href="https://timavera.is/">timavera.is</a></div>
+                  <p>Timeclock for tradesmen. Deliberately simple time tracking for small companies with simple needs: track hours & locations.</p>
+                  <p>Founded and developed a time registration solution for small companies to monitor project and employee times</p><p>Built in my spare time along side other projects without any external investment.<br>Full stack engineering, devops, sales & customer support.<br>Grew to over $200.000 in annual recurring revenue (as of end of 2023) with over 400 active companies.</p>
 
-</body>
+                  <h3>Takumi<span class="date pull-right">2017 - 2019</span></h3>
+                  <strong>Full Stack Software Engineer</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://takumi.com">takumi.com</a></div>
+                  <p>Takumi, the worlds leading data-driven influencer marketing platform</p>
+                  <p>Full stack (mobile app, website, server, database and infrastructure) using Expo, React-Native, React, Graphql, Python-Flask, PostgreSQL, Kubernetes and AWS</p>
+                  <ul>
+                    <li>Designed and implemented the payment system and integrations with payment providers, customer relationship management systems and tax systems for cross country compliance</li>
+                    <li>Implemented the user management system, introducing granular roles and permissions for user actions</li>
+                    <li>Designed and implemented an image comparision tool to compare and validate approved influencer posts to actual posts (using AWS Rekognition)</li>
+                  </ul>
+                  <h3>Novomatic Lottery Solutions<span class="date pull-right">2015 - 2017</span></h3>
+                  <strong>Software Engineer</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://www.novomatic.com">novomatic.com</a></div>
+                  <p>Novomatic LS provides a full solution for lotteries, allowing them to offer games to their players through all available channels. </p>
+                  <ul>
+                    <li>Designed and implemented the payment system for player’s accounts and integrated it with different payment service providers (PayPal, etc).</li>
+                    <li>Identified fundamental flaws in the front-end data flow and introduced the Flux pattern (and later Redux) as a solution, improving debugging, predictability and preventing regressions.</li>
+                    <li>Implemented a control center for secure data submission and data display of sensitive lottery content.</li>
+                    <li>Migrated from SVN to Git and established code reviews and pull request workflow as a standard in my team development cycle.</li>
+                    <li>Prototyped and championed web sockets as a foundation for future server communication.</li>
+                  </ul>
+
+                  <h3>Shake &amp; Pizza<span class="date pull-right">2016</span></h3>
+                  <strong>Software Developer (Contractor)</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://shakepizza.is">shakepizza.is</a></div>
+                  <p>Hired as a contractor to design and build a system to manage and show estimated waiting time for orders. A full stack solution from the hardware, software, deployment and usage training. Accomplished with Node, Node webkit and Android development.</p>
+
+                  <h3>University of Iceland<span class="date pull-right">2014 - 2015</span></h3>
+                  <strong>Assitant professor/lecturer for Computer Science 1 and 2</strong>
+                  <div class="website pull-right"><a target="_blank" href="https://hi.is">hi.is</a></div>
+                  <p>Started off as an assistant. Due to popular student demand the University requested that I host my own lectures and assist the professor with his support classes</p>
+
+                  <h3>Wilsons Pizza<span class="date pull-right">2013</span></h3>
+                  <strong>Software Developer (Contractor)</strong>
+                  <p>Designed and implemented a management and supply system. The management system helped employees cashing out, doing the end of day balance sheet and filling out various operational reports. The purpose of the supply system was to draw statistical conclusions on sales numbers.</p>
+
+                  <h3>Various<span class="date pull-right">2001 - 2013</span></h3>
+                  <strong>Marketing advisor, marketing and hotel director for hotels and guesthouses. Realty Management, accounting, shift supervisor, part time bouncer and various labor work.</strong>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section id="personal" class="row">
+              <header class="col-sm-3">
+                <h3>Personal Characteristics</h3>
+              </header>
+              <div class="col-sm-9">
+                <p>Working as a part of a group and/or leading one comes naturally to me. I have experience in managing my own projects and projects that require constant adaption.</p>
+                <p>Most of my education was through distance learning while also working a full time job. As father of two and a husband to a successful business owner, I have learned to manage my time to the fullest.</p>
+                <p>I have a passion for programming and have been playing around with functional programming, mostly Haskell and Scheme. I read books on subjects that currently interest me in my free time from an ever-expanding list. I am engaged in sports on a daily basis and have been weight lifting since 2006. I go out of my way to participate and plan events related to computer games, hackathons, board games and all kinds of events that are all about good fun with good people.</p>
+              </div>
+            </section>
+            <hr>
+            <section id="education" class="row">
+              <header class="col-sm-3">
+                <h3>Education</h3>
+              </header>
+              <div class="col-sm-9">
+                <div class="details">
+                  <h3>University of Iceland<span class="date pull-right">2012 - 2017</span></h3>
+                  <strong>Software Engineer, Bachelor</strong>
+
+                  <h3>FSN<span class="date pull-right">2010 - 2011</span></h3>
+                  <strong>Natural Sciences, Diploma</strong>
+
+                  <h3>FSN<span class="date pull-right">2006 - 2010</span></h3>
+                  <strong>Sociology, Diploma</strong>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section id="skills" class="row">
+              <header class="col-sm-3">
+                <h3>Skills</h3>
+              </header>
+              <div class="col-sm-9">
+                <div class="details row">
+                  <div class="col-sm-12">
+                    <ul>
+                      <li>
+                        <h4>
+                          Languages<span class="pull-right"></span>
+                        </h4>
+                        <ul>
+                          <li>Java EE</li>
+                          <li>Python</li>
+                          <li>JavaScript</li>
+                          <li>Matlab</li>
+                          <li>C++</li>
+                          <li>C#</li>
+                          <li>SQL</li>
+                          <li>Haskell</li>
+                          <li>Scheme</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <ul>
+                      <li>
+                        <h4>
+                          Databases<span class="pull-right"></span>
+                        </h4>
+                        <ul>
+                          <li>Oracle</li>
+                          <li>MySQL</li>
+                          <li>PostgreSQL</li>
+                          <li>SQLite</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <ul>
+                      <li>
+                        <h4>
+                          Front-end<span class="pull-right"></span>
+                        </h4>
+                        <ul>
+                          <li>React</li>
+                          <li>Redux</li>
+                          <li>Webpack</li>
+                          <li>Grunt</li>
+                          <li>Durandal</li>
+                          <li>WebGL</li>
+                          <li>Knockout</li>
+                          <li>JQuery</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <ul>
+                      <li>
+                        <h4>
+                          Other<span class="pull-right"></span>
+                        </h4>
+                        <ul>
+                          <li>Wildfly</li>
+                          <li>Spring</li>
+                          <li>Gradle</li>
+                          <li>Ant</li>
+                          <li>Android Development</li>
+                          <li>Git</li>
+                          <li>Subversion</li>
+                          <li>Node</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section id="languages" class="row">
+              <header class="col-sm-3">
+                <h3>Languages</h3>
+              </header>
+              <div class="col-sm-9">
+                <div class="details">
+                  <ul>
+                    <li>
+                      <h4>Icelandic<span class="pull-right">Native speaker</span></h4>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <h4>English<span class="pull-right">Fluent speaker</span></h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section id="references" class="row"></section>
+            <footer></footer>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>

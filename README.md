@@ -13,6 +13,23 @@ Create an S3 bucket with the following settings:
 2. Under "properties", enable "Static website hosting"
 3. Then under "Index document", in the static website settings, write "index.html"
 
+Remember to go into "permissions" and add
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AddPerm",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<name-of-your-bucket>/*"
+        }
+    ]
+}
+```
+
 ## Cloudfront
 Go to AWS and into Cloudfront
 
@@ -91,5 +108,6 @@ and create a secret for each one named:
 - CLOUDFRONT_DISTRIBUTION_ID
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
+
 respectively.
 
