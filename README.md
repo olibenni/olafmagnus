@@ -62,7 +62,7 @@ Create a policy for the user when asked and copy this one
                 "s3:ListBucket"
             ],
             "Resource": [
-                "arn:aws:s3:::arn:aws:s3:::<name-of-your-bucket>"
+                "arn:aws:s3:::<name-of-your-bucket>"
             ]
         },
         {
